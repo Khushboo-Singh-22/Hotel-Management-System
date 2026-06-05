@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h2>Hotel Booking System</h2>
+
+    <form action="Booking.php" method="post">
+
+        <label>Customer Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Room Type:</label><br>
+        <select name="room">
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+        </select><br><br>
+
+        <label>Number of Days:</label><br>
+        <input type="number" name="days" min="1" required><br><br>
+
+        <input type="submit" value="Book Room">
+
+    </form>
+
+</body>
+</html>
